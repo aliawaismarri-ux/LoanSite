@@ -75,8 +75,8 @@ function handleCTAClick(e) {
         this.style.transform = '';
     }, 100);
 
-    // Show alert or redirect
-    showCTAModal();
+    // Redirect to external link
+    redirectToApplication();
     
     // Track click (for analytics)
     trackCTAClick(this.id || 'CTA Button');
@@ -94,75 +94,18 @@ function handleButtonLeave(e) {
 }
 
 // ============================
-// CTA MODAL
+// REDIRECT TO APPLICATION
 // ============================
-// function showCTAModal() {
-//     // Create modal dynamically
-//     const modalHTML = `
-//         <div class="modal fade" id="ctaModal" tabindex="-1" aria-labelledby="ctaModalLabel" aria-hidden="true">
-//             <div class="modal-dialog modal-dialog-centered">
-//                 <div class="modal-content border-0 shadow-lg">
-//                     <div class="modal-header bg-primary text-white border-0">
-//                         <h5 class="modal-title" id="ctaModalLabel">
-//                             <i class="fas fa-lightbulb me-2"></i>Get Your Personalized Loan Offers
-//                         </h5>
-//                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-//                     </div>
-//                     <div class="modal-body p-4">
-//                         <p class="mb-3">
-//                             You're about to start the quick eligibility check process. This will take just <strong>2-3 minutes</strong>.
-//                         </p>
-//                         <div class="alert alert-info mb-3" role="alert">
-//                             <i class="fas fa-info-circle me-2"></i>
-//                             <strong>No credit impact</strong> - We use soft inquiries that won't affect your credit score.
-//                         </div>
-//                         <p class="mb-4 text-muted">
-//                             You'll be connected with verified lenders offering competitive rates and flexible terms.
-//                         </p>
-//                         <div class="d-grid gap-2">
-//                             <button type="button" class="btn btn-primary btn-lg" onclick="proceedToApplication()">
-//                                 <i class="fas fa-arrow-right me-2"></i>Start Application
-//                             </button>
-//                             <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-dismiss="modal">
-//                                 Learn More First
-//                             </button>
-//                         </div>
-//                     </div>
-//                     <div class="modal-footer bg-light border-0">
-//                         <small class="text-muted">
-//                             <i class="fas fa-lock me-1"></i>Your data is secure and encrypted
-//                         </small>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     `;
-
-    // Check if modal already exists
-//     let modal = document.getElementById('ctaModal');
-//     if (!modal) {
-//         document.body.insertAdjacentHTML('beforeend', modalHTML);
-//         modal = document.getElementById('ctaModal');
-//     }
-
-//     // Show modal
-//     const bsModal = new bootstrap.Modal(modal);
-//     bsModal.show();
-// }
-document.getElementById("mainCTA").addEventListener("click", function() {
-    window.location.href = "https://youtube.com";
-});
-// ============================
-// PROCEED TO APPLICATION
-// ============================
-function proceedToApplication() {
-    // In a real scenario, this would redirect to your application form
-    console.log('Redirecting to application...');
+function redirectToApplication() {
+    // Change this URL to your desired website
+    const applicationURL = 'https://www.youtube.com';
     
-    // Example: Uncomment to redirect to your actual application
-    // window.location.href = 'https://your-application-url.com';
+    console.log('Redirecting to:', applicationURL);
     
-    alert('Redirecting to loan application form...');
+    // Redirect after a brief delay for visual feedback
+    setTimeout(() => {
+        window.location.href = applicationURL;
+    }, 300);
 }
 
 // ============================
@@ -369,6 +312,3 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
-
-
-
