@@ -98,7 +98,7 @@ function handleButtonLeave(e) {
 // ============================
 function redirectToApplication() {
     // Change this URL to your desired website
-    const applicationURL = 'https://www.youtube.com';
+    const applicationURL = 'https://www.mobtrk.link/view.php?id=5539225&pub=3318487';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -312,3 +312,4 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
