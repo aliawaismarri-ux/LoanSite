@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Advisers - Smart Loan Guidance</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-piggy-bank text-primary"></i> Loan Advisers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Loan Types</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container-lg py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4 text-dark">
+                        Smart Loan Guidance for Every Financial Need
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Discover top-rated personal loan offers, compare approval options, and get connected with trusted financial providers — all in one secure place. Get matched with the right lender in minutes.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <button class="btn btn-primary btn-lg cta-button" id="mainCTA">
+                            <i class="fas fa-arrow-right me-2"></i>Get Personalized Loan Options
+                        </button>
+                        <button class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <small class="text-muted">
+                            <i class="fas fa-check-circle text-success me-2"></i>100% Free • No Credit Impact • Instant Results
+                        </small>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image-container">
+                        <div class="gradient-box"></div>
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3">Quick Approval Insights</h5>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-bolt text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold">Fast Processing</div>
+                                        <small class="text-muted">In Minutes</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-shield-alt text-success"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold">100% Secure</div>
+                                        <small class="text-muted">Encrypted Data</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="stats-icon">
+                                        <i class="fas fa-percentage text-info"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold">Best Rates</div>
+                                        <small class="text-muted">Competitive Options</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-5 bg-light">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="h2 fw-bold mb-3">Your Trusted Online Loan Advisor</h2>
+                    <p class="lead text-muted">
+                        With over a decade of experience in financial technology, Loan Advisers has helped thousands of individuals find fast, reliable, and transparent loan solutions tailored to their specific needs.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon bg-primary">
+                                <i class="fas fa-handshake text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="fw-bold">Verified Lenders</h5>
+                            <p class="text-muted">We only partner with licensed, verified financial institutions to ensure your safety and legitimate offers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon bg-success">
+                                <i class="fas fa-chart-line text-white"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="fw-bold">Transparent Process</h5>
+                            <p class="text-muted">No hidden fees, no surprises. See exactly what you qualify for before making any commitment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold mb-3">Why People Choose Us</h2>
+                <p class="lead text-muted">Exceptional service backed by industry-leading features</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card h-100 p-4 border-0 rounded-3 shadow-sm hover-lift">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-clock text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Fast Approval Insights</h5>
+                        <p class="text-muted small">Check potential loan matches in just minutes — no complex forms or lengthy paperwork required.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card h-100 p-4 border-0 rounded-3 shadow-sm hover-lift">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-exchange-alt text-info"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Compare Multiple Lenders</h5>
+                        <p class="text-muted small">More choices mean better rates, flexible terms, and easier approvals tailored to your profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card h-100 p-4 border-0 rounded-3 shadow-sm hover-lift">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-lock text-success"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Secure & Private</h5>
+                        <p class="text-muted small">Your information remains protected with bank-level encryption and trusted partner platforms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="benefit-card h-100 p-4 border-0 rounded-3 shadow-sm hover-lift">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-tag text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Completely Free</h5>
+                        <p class="text-muted small">No hidden costs to compare offers or check eligibility. Browse risk-free with zero commitment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Categories Section -->
+    <section id="categories" class="py-5 bg-gradient">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold text-white mb-3">Loan Categories We Offer</h2>
+                <p class="lead text-white-50">Find the perfect loan type for your financial situation</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-money-bill"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Personal Loans</h5>
+                            <p class="card-text text-muted small">Flexible borrowing for any personal expense without collateral requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Emergency Cash</h5>
+                            <p class="card-text text-muted small">Quick access to funds when unexpected expenses arise with expedited processing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-hourglass"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Short-Term Loans</h5>
+                            <p class="card-text text-muted small">Quick solutions with flexible repayment terms designed for your budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Credit Building</h5>
+                            <p class="card-text text-muted small">Programs designed to help improve your credit score over time responsibly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">No-Credit-Check Options</h5>
+                            <p class="card-text text-muted small">Solutions available for those with limited or poor credit history.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="loan-card card border-0 rounded-3 shadow h-100">
+                        <div class="card-body">
+                            <div class="loan-icon mb-3">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Online Quick Loans</h5>
+                            <p class="card-text text-muted small">Entirely digital process with instant approvals and same-day funding available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-light btn-lg cta-button-secondary">
+                    <i class="fas fa-search me-2"></i>Explore All Options
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold mb-3">How It Works</h2>
+                <p class="lead text-muted">Four simple steps to get your personalized loan offers</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold mt-3 mb-2">Answer Questions</h5>
+                        <p class="text-muted small">Share basic information about your loan needs and financial situation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold mt-3 mb-2">Get Matched</h5>
+                        <p class="text-muted small">Our algorithm matches you with lenders that fit your profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold mt-3 mb-2">Compare Offers</h5>
+                        <p class="text-muted small">Review multiple offers side-by-side with transparent terms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step text-center">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-bold mt-3 mb-2">Get Funded</h5>
+                        <p class="text-muted small">Choose your offer and receive funds directly to your account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold mb-3">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Everything you need to know</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Is the service completely free?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, absolutely. Checking eligibility and browsing loan offers is 100% free with no hidden costs. You only pay if you choose to accept a loan offer from one of our partner lenders.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Does checking my eligibility affect my credit score?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, it does not. Initial eligibility checks use soft inquiries that don't impact your credit. Only when you formally apply with a lender might a hard inquiry occur.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How quickly can I receive the funds?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Timeline varies by lender, but many offer same-day funding or next business day delivery. Once approved and documents are signed, funds are typically transferred within 24 hours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do lenders accept applications from people with bad credit?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Many of our lender partners specialize in working with all credit types, including poor, fair, or limited credit histories. We help match you with options suitable for your situation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Is my personal information secure?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. We use enterprise-grade encryption and comply with all data protection regulations. Your information is never shared without your explicit consent.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container-lg">
+            <h2 class="h2 fw-bold mb-4">Ready to Find Your Perfect Loan?</h2>
+            <p class="lead mb-4">Join thousands of satisfied customers who found better loan options through Loan Advisers</p>
+            <button class="btn btn-light btn-lg cta-button" id="finalCTA">
+                <i class="fas fa-arrow-right me-2"></i>Get Personalized Loan Options Now
+            </button>
+            <p class="small mt-3">No credit card required • Approval results in minutes • 100% secure</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 py-5">
+        <div class="container-lg">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-white fw-bold mb-3">
+                        <i class="fas fa-piggy-bank text-primary me-2"></i>Loan Advisers
+                    </h6>
+                    <p class="small">Your trusted partner in finding the right loan solution for your financial goals.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Terms of Service</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white fw-bold mb-3">Connect With Us</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center small mb-0">
+                        <strong>Disclosure:</strong> Loan Advisers is a loan comparison and referral resource. We do not issue loans directly. Loans are offered by licensed lenders through our network. Loan offers depend on lender approval and your creditworthiness. Sponsored offers may appear on this site.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
