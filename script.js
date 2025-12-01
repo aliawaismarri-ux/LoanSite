@@ -138,7 +138,7 @@ function handleButtonLeave(e) {
 //         </div>
 //     `;
 
-//     // Check if modal already exists
+    // Check if modal already exists
 //     let modal = document.getElementById('ctaModal');
 //     if (!modal) {
 //         document.body.insertAdjacentHTML('beforeend', modalHTML);
@@ -149,7 +149,9 @@ function handleButtonLeave(e) {
 //     const bsModal = new bootstrap.Modal(modal);
 //     bsModal.show();
 // }
-
+document.getElementById("mainCTA").addEventListener("click", function() {
+    window.location.href = "https://your-link.com";
+});
 // ============================
 // PROCEED TO APPLICATION
 // ============================
@@ -367,4 +369,5 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
 
