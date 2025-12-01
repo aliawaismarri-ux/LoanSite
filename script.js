@@ -150,7 +150,7 @@ function handleButtonLeave(e) {
 //     bsModal.show();
 // }
 document.getElementById("mainCTA").addEventListener("click", function() {
-    window.location.href = "https://your-link.com";
+    window.location.href = "https://youtube.com";
 });
 // ============================
 // PROCEED TO APPLICATION
@@ -369,5 +369,6 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
 
 
