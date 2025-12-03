@@ -19,6 +19,14 @@ function initializeEventListeners() {
         mainCTA.addEventListener('mouseleave', handleButtonLeave);
     }
 
+    // Duplicate CTA Button
+    const duplicateCTA = document.getElementById('duplicateCTA');
+    if (duplicateCTA) {
+        duplicateCTA.addEventListener('click', handleDuplicateCTAClick);
+        duplicateCTA.addEventListener('mouseenter', handleButtonHover);
+        duplicateCTA.addEventListener('mouseleave', handleButtonLeave);
+    }
+
     // Final CTA Button
     const finalCTA = document.getElementById('finalCTA');
     if (finalCTA) {
@@ -83,6 +91,25 @@ function handleCTAClick(e) {
 }
 
 // ============================
+// DUPLICATE CTA BUTTON CLICK HANDLER
+// ============================
+function handleDuplicateCTAClick(e) {
+    e.preventDefault();
+    
+    // Add click animation
+    this.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+        this.style.transform = '';
+    }, 100);
+
+    // Redirect to external link
+    redirectToDuplicateApplication();
+    
+    // Track click (for analytics)
+    trackCTAClick(this.id || 'Duplicate CTA Button');
+}
+
+// ============================
 // BUTTON HOVER EFFECTS
 // ============================
 function handleButtonHover(e) {
@@ -99,6 +126,21 @@ function handleButtonLeave(e) {
 function redirectToApplication() {
     // Change this URL to your desired website
     const applicationURL = 'https://www.mobtrk.link/view.php?id=5539225&pub=3318487';
+    
+    console.log('Redirecting to:', applicationURL);
+    
+    // Redirect after a brief delay for visual feedback
+    setTimeout(() => {
+        window.location.href = applicationURL;
+    }, 300);
+}
+
+// ============================
+// REDIRECT TO DUPLICATE APPLICATION
+// ============================
+function redirectToDuplicateApplication() {
+    // Duplicate CTA URL
+    const applicationURL = 'https://www.directcpi.com/view.php?id=5542840&pub=3318487';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -312,4 +354,3 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
-
