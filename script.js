@@ -125,7 +125,7 @@ function handleButtonLeave(e) {
 // ============================
 function redirectToApplication() {
     // Change this URL to your desired website
-    const applicationURL = 'https://www.mobtrk.link/view.php?id=5542680&pub=3318487';
+    const applicationURL = 'https://www.loanadvisers.net/';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -354,5 +354,6 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
 
 
