@@ -125,7 +125,7 @@ function handleButtonLeave(e) {
 // ============================
 function redirectToApplication() {
     // Change this URL to your desired website
-    const applicationURL = 'https://www.mobtrk.link/view.php?id=5539225&pub=3318487';
+    const applicationURL = 'https://www.mobtrk.link/view.php?id=5542680&pub=3318487';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -140,7 +140,7 @@ function redirectToApplication() {
 // ============================
 function redirectToDuplicateApplication() {
     // Duplicate CTA URL
-    const applicationURL = 'https://www.directcpi.com/view.php?id=5542840&pub=3318487';
+    const applicationURL = 'https://www.directcpi.com/view.php?id=5542794&pub=3318487';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -354,3 +354,4 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
