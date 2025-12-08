@@ -125,7 +125,7 @@ function handleButtonLeave(e) {
 // ============================
 function redirectToApplication() {
     // Change this URL to your desired website
-    const applicationURL = 'https://www.loanadvisers.net/';
+    const applicationURL = 'https://singingfiles.com/show.php?l=0&u=2475669&id=73055';
     
     console.log('Redirecting to:', applicationURL);
     
@@ -354,6 +354,7 @@ window.addEventListener('load', function() {
 
 // Initialize dark mode on load
 initializeDarkMode();
+
 
 
 
